@@ -1,66 +1,66 @@
-# SocialMediaCrawler
+# Web and Social Media Crawler Toolkit for Academic Research
 
 ## Overview
 
-SocialMediaCrawler is a specialized tool designed for academic and research purposes, enabling users to systematically collect and organize textual and multimedia content from various social media platforms, including Weibo and other major self-media sites. The crawler extracts posts based on user-defined keywords, processes the acquired data, and structures it into analyzable formats for subsequent research.
+This repository contains a collection of specialized web crawlers designed for academic data collection and analysis. Each tool is tailored for specific platforms, including Baidu, Xiaohongshu, TikTok, and Weibo. Beyond basic data extraction, these tools incorporate advanced data processing and structuring functionalities to support research in fields such as computational social science, media studies, and data mining.
 
-## Features
-
-- **Keyword-based Crawling**: Automatically collects text posts containing specified keywords across supported social media platforms.
-- **Multimedia Content Handling**: Downloads and categorizes associated images and videos, saving them into organized directories.
-- **Structured Data Output**: Consolidates collected textual data into CSV files, facilitating efficient data analysis and processing.
-- **Extensible Architecture**: Designed for easy adaptation to new platforms and media types.
-
-## Use Cases
-
-- Sentiment analysis of social media discourse
-- Media studies and communication research
-- Trend detection and topic modeling
-- Dataset preparation for machine learning projects
-
-## Requirements
-
-- Python 3.7+
-- Dependencies listed in `requirements.txt`
-
-## Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/wlxhfzh/SocialMediaCrawler.git
-   cd SocialMediaCrawler
-   ```
-
-2. Install necessary dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Configure your keywords and platform settings in `config.yaml` (see example provided in the repository).
-
-4. Run the crawler:
-   ```bash
-   python search.py
-   python settings.py
-   ```
-
-## Output Structure
-
-- `/结果文件/csv/` — Collected text data in CSV format
-- `/结果文件/images/` — Downloaded and categorized images
-- `/结果文件/videos/` — Downloaded and categorized videos
-
-## Disclaimer
-
-This tool is intended for academic research and complies with the terms of service of the respective platforms. Users are responsible for ensuring ethical and lawful use of the data.
-This repository is based on an open-source project of the same name on GitHub. On top of the original code, I have implemented additional features, including proxy account support and the extraction of location and time information from the collected text data.
 ## Author
 
 **Wang Lei**
 
-I am an aspiring student with a strong passion for research and a keen desire to pursue a PhD offer. I am dedicated to advancing my academic journey and contributing to the field through innovative research and technical development.
+I am an aspiring researcher with a strong passion for data-driven analysis and am actively seeking a PhD position. This collection showcases my technical skills in data acquisition and processing, developed in preparation for advanced academic research.
 
+---
+
+## Crawler Descriptions
+
+### 1. Baidu Crawler Tools
+
+This package provides a comprehensive tool for collecting and processing data from Baidu's search engine.
+
+**Key Features:**
+- **Keyword-based Search**: Downloads news articles and images from Baidu based on specified keywords.
+- **OCR Integration**: Utilizes Optical Character Recognition (OCR) to extract textual information from downloaded images and converts it into `.txt` format.
+- **Geo-temporal Data Extraction**: Parses the extracted text to identify and extract location and date information.
+- **Structured Output**: Groups and sorts the data by region and date, generating a final, well-structured CSV file for analysis.
+
+### 2. Xiaohongshu (Red Note) Crawler Tools
+
+A crawler designed to collect data from the social media platform Xiaohongshu.
+
+**Key Features:**
+- **Advanced Login Simulation**: Supports three login methods to simulate authentic user access: QR code scanning, mobile phone number verification, and username/password credentials.
+- **Flexible Data Collection**: Gathers post information (e.g., content, likes, comments, IP-based location) by searching for keywords or specific user IDs.
+- **Proxy Support**: Includes an optional feature to use proxy accounts for crawling tasks.
+- **Organized Data Output**: Systematically categorizes and saves the collected data into a text CSV file, an image collection, and a video collection.
+
+### 3. TikTok (Douyin) Crawler Tools
+
+This tool shares the same core functionalities as the Xiaohongshu crawler, adapted for the TikTok/Douyin platform. It supports identical login, data collection, and output structuring methods.
+
+### 4. Weibo Crawler Tools
+
+A powerful and versatile crawler for collecting data from Weibo.
+
+**Key Features:**
+- **Broad-Spectrum Crawling**:
+  - **By Keyword/ID**: Crawls post information (content, like/comment counts, IP-based location) based on keywords or user IDs.
+  - **By User & Date**: Crawls all posts from a specific user (identified by username or ID) within a designated date range.
+- **Comprehensive Data Structuring**: All collected information is systematically organized and saved into a text CSV file, an image collection, and a video collection.
+
+---
+
+## Important Declarations
+
+0.My Email: 2823115764@qq.com
+
+1.  **Attribution and Enhancement**: The foundational crawling functionalities of these tools are adapted from open-source projects of the same names available on GitHub. My primary contribution has been the development and integration of advanced features for data processing, classification, and structuring to enhance their utility for academic research.
+
+2.  **Request for Results**: If you are interested in the output generated by any of these crawlers for research or evaluation purposes, please feel free to email me. I can provide a `.zip` file containing sample results.
+
+3.  **Code Availability**: For privacy considerations and to respect platform terms of service, some parts of the source code in this public repository have been adapted or omitted. If you require the complete, functional code for academic collaboration or review, please contact me via email.
 
 ## Contact
 
-For questions, suggestions, or collaboration, please contact [2823115764@qq.com].
+For any inquiries, collaboration proposals, or requests, please reach out to me at: **[28231157642qq.com]**
+
